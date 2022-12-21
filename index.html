@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="/logo1.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe Game</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="game-header">
+        Tic-Tac-Toe Game!<img src="logo1.png" alt="Logo" class="logo" />
+      </h1>
+      <h2 class="game-slogan">play clean, play hard, play to win!</h2>
+      <h3 class="winner hidden"></h3>
+    </header>
+    <table class="all-table">
+      <tr>
+        <td id="td11"><button class="btn btn--11"></button></td>
+        <td id="td12"><button class="btn btn--12"></button></td>
+        <td id="td13"><button class="btn btn--13"></button></td>
+      </tr>
+      <tr>
+        <td id="td21"><button class="btn btn--21"></button></td>
+        <td id="td22"><button class="btn btn--22"></button></td>
+        <td id="td23"><button class="btn btn--23"></button></td>
+      </tr>
+      <tr>
+        <td id="td31"><button class="btn btn--31"></button></td>
+        <td id="td32"><button class="btn btn--32"></button></td>
+        <td id="td33"><button class="btn btn--33"></button></td>
+      </tr>
+      <tr></tr>
+      <section>
+        <h1 class="left">player X</h1>
+        <h1 class="turnX hidden">Turn X !</h1>
+        <h2 class="score--1">0</h2>
+        <h1 class="right">player O</h1>
+        <h1 class="turnO hidden">Turn O !</h1>
+        <h2 class="score--2">0</h2>
+      </section>
+    </table>
+    <button class="again">Play Again</button>
+    <button class="reset">Reset the game</button>
+    <button class="show-how">How to play?</button>
+    <div class="how hidden">
+      <button class="close-how">&times;</button>
+      <h1 class="howHeader">Tic-tac-toe X&O - How to play</h1>
+      <p class="how-to">
+        <br />
+        <br />
+        Tic-tac-toe is played on a three-by-three grid by two players, who
+        alternately place the marks X and O in one of the nine spaces in the
+        grid.<br />
+        <br />
+        There is no universally-agreed rule as to who plays first, but in this
+        article the convention that X plays first is used. Players soon discover
+        that the best play from both parties leads to a draw. Hence, tic-tac-toe
+        is often played by young children who may not have discovered the
+        optimal strategy. Because of the simplicity of tic-tac-toe, it is often
+        used as a pedagogical tool for teaching the concepts of good
+        sportsmanship and the branch of artificial intelligence that deals with
+        the searching of game trees. It is straightforward to write a computer
+        program to play tic-tac-toe perfectly or to enumerate the 765
+        essentially different positions (the state space complexity) or the
+        26,830 possible games up to rotations and reflections (the game tree
+        complexity) on this space. If played optimally by both players, the game
+        always ends in a draw, making tic-tac-toe a futile game.<br />
+        <br />
+        The game can be generalized to an m,n,k-game, in which two players
+        alternate placing stones of their own color on an m-by-n board with the
+        goal of getting k of their own color in a row. Tic-tac-toe is the
+        3,3,3-game. Harary's generalized tic-tac-toe is an even broader
+        generalization of tic-tac-toe. It can also be generalized as an nd game,
+        specifically one in which n equals 3 and d equals 2. It can be
+        generalised even further by playing on an arbitrary incidence structure,
+        where rows are lines and cells are points. Tic-tac-toe's incidence
+        structure consists of nine points, three horizontal lines, three
+        vertical lines, and two diagonal lines, with each line consisting of at
+        least three points.<br /><br />
+        Good luck! Play clean, Play hard, Play to win!
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+  <footer class="footer">
+    Amit Eilam &copy; 2022<br />
+    <a>Version 20.14.12</a>
+  </footer>
+</html>
